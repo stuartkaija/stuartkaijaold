@@ -1,5 +1,9 @@
 @use './styles/partials/global' as *;
+@use './styles/partials/mixins' as *;
 
 .App {
-  display: flex;
+
+	@include tablet {
+		
+	}
 }
