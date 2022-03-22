@@ -6,13 +6,15 @@ import './App.scss';
 
 function App() {
   return (
-    <Router>
-      <Navigation />
-      <Routes>
-        <Route path='/' element={<About />} />
-        <Route path='/projects' element={<Projects />} />
-      </Routes>
-    </Router>
+    <div className='App'>
+      <Router>
+        <Navigation />
+        <Routes>
+          <Route path='/' element={<About />} />
+          <Route path='/projects' element={<Projects />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
