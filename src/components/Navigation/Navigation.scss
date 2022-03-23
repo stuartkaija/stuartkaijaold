@@ -4,7 +4,6 @@
 .navigation {
     height: 4rem;
     display: flex;
-    transform: max-height 1s;
     justify-content: center;
     align-items: center;
 
@@ -16,26 +15,44 @@
     }
 
     &__link {
-        margin: 0rem 2rem;
+        margin: 0rem 1rem;
         color: $color-text;
         transform: rotate(-25deg);
         text-transform: uppercase;
-        transition: border ease-in-out 0.1s;
-        // transition: transform ease-in-out 0.5s;
+        transition: transform ease-in-out 0.2s, margin 1s;
+
+        @include tablet {
+            margin: 0rem 4rem;
+            transition: transform ease-in-out 0.2s, margin 0.5s;
+        }
+
+        @include desktop {
+            padding: 3rem 0rem;
+        }
     
         &:hover {
             transform: rotate(0deg);
-            padding-bottom: 0.25rem;
-            border-bottom: 0.1rem solid $color-text;
-            transition: border ease-in-out 0.1s;
+            transition: transform ease-in-out 0.2s;
+
+            @include tablet {
+                transition: transform ease-in-out 0.2s;
+
+            }
+
         }
     }
 
     &__link--active {
-        margin: 0rem 2rem;
+        margin: 0rem 1rem;
         color: $color-text;
         text-transform: uppercase;
-        padding-bottom: 0.25rem;
-        border-bottom: 0.1rem solid $color-text;
+
+        @include tablet {
+            margin: 0rem 4rem;
+        }
+
+        @include desktop {
+            padding: 3rem 0rem;
+        }
     }
 }

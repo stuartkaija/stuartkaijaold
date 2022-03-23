@@ -2,10 +2,15 @@
 @use './styles/partials/mixins' as *;
 
 .App {
+	max-height: 100vh;
 	display: flex;
 	flex-direction: column;
 
 	@include desktop {
 		flex-direction: row;
 	}
+
+	// &__container {
+		
+	// }
 }

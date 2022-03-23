@@ -1,7 +1,10 @@
-import React from 'react'
+import React from 'react';
+import './Projects.scss';
 
 export default function Projects() {
   return (
-    <div>This is the projects page</div>
+    <div className='projects'>
+        <p className='projects__words'>This is the projects page!</p>
+    </div>
   )
 }
