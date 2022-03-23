@@ -1,7 +1,7 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/variables' as *;
 
-.projects {
+.home {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,5 +15,9 @@
 
     &__words {
         font-size: 1.5rem;
+    
+        &--span {
+            font-style: italic;
+        }
     }
 }

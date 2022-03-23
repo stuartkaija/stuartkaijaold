@@ -1,14 +1,57 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
 .navigation {
-    background-color: rgb(221, 145, 145);
-    height: 100vh;
-    width: 20%;
-    color: white;
+    height: 4rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    &__link{
-        
+    @include desktop {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__link {
+        margin: 0rem 1rem;
+        color: $color-text;
+        transform: rotate(-25deg);
+        text-transform: uppercase;
+        transition: transform ease-in-out 0.2s, margin 1s;
+
+        @include tablet {
+            margin: 0rem 4rem;
+            transition: transform ease-in-out 0.2s, margin 0.5s;
+        }
+
+        @include desktop {
+            padding: 3rem 0rem;
+        }
+    
+        &:hover {
+            transform: rotate(0deg);
+            transition: transform ease-in-out 0.2s;
+
+            @include tablet {
+                transition: transform ease-in-out 0.2s;
+
+            }
+
+        }
+    }
+
+    &__link--active {
+        margin: 0rem 1rem;
+        color: $color-text;
+        text-transform: uppercase;
+
+        @include tablet {
+            margin: 0rem 4rem;
+        }
+
+        @include desktop {
+            padding: 3rem 0rem;
+        }
     }
 }
