@@ -2,8 +2,10 @@
 @use './styles/partials/mixins' as *;
 
 .App {
+	display: flex;
+	flex-direction: column;
 
-	@include tablet {
-		
+	@include desktop {
+		flex-direction: row;
 	}
 }

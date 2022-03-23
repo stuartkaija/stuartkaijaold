@@ -5,9 +5,11 @@ import './Navigation.scss';
 export default function Navigation() {
     return (
         <nav className='navigation'>
-            <NavLink className='navigation__link' to='/'>About</NavLink>
-            <NavLink className='navigation__link' to='/projects'>Projects</NavLink>
-            <a className='navigation__link' href="">Resume</a> {/* this will be a link to download or show my resume... */}
+            <NavLink className={({ isActive }) => (isActive ? 'navigation__link--active' : 'navigation__link')}  to='/'>About</NavLink>
+            <NavLink className={({ isActive }) => (isActive ? 'navigation__link--active' : 'navigation__link')} to='/projects'>Projects</NavLink>
+            <NavLink className={({ isActive }) => (isActive ? 'navigation__link--active' : 'navigation__link')} to='/resume'>Resume</NavLink>
+
+            {/* <a className='navigation__link' href="">Resume</a> this will be a link to download or show my resume... */}
         </nav>
     )
 }
