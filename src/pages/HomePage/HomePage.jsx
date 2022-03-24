@@ -17,7 +17,7 @@ export default function HomePage() {
         <div className='home'>
             <p className='home__words'>Hello, and happy <span>{dateMaker()}</span>.</p>
             <p className='home__words'>I'm Stuart - recent web development bootcamp grad, former fire fighter. Interested in creating things (<NavLink to='/projects'>websites</NavLink>, music, <span className='home__words--span'>these could be hyperlinks ideally)</span>, seeing new places, blah blah blah blah blah.</p>
-            <p className='home__words'>You can reach me <a href="mailto:stuartkaija@gmail.com?subject=mail%20from%20personal%20site">here</a>.</p>
+            <p className='home__words'>You can reach me <a href="mailto:stuartkaija@gmail.com?subject=mail%20from%20personal%20site" target='_blank'>here</a>.</p>
         </div>
     )
 }
