@@ -5,7 +5,7 @@ import './Navigation.scss';
 export default function Navigation() {
     return (
         <nav className='navigation'>
-            <NavLink className={({ isActive }) => (isActive ? 'navigation__link--active' : 'navigation__link')}  to='/about'>About</NavLink>
+            <NavLink className={({ isActive }) => (isActive ? 'navigation__link--active' : 'navigation__link')} to='/'>About</NavLink>
             <NavLink className={({ isActive }) => (isActive ? 'navigation__link--active' : 'navigation__link')} to='/projects'>Projects</NavLink>
             <NavLink className={({ isActive }) => (isActive ? 'navigation__link--active' : 'navigation__link')} to='/resume'>Resume</NavLink>
 
