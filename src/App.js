@@ -1,27 +1,23 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage/HomePage';
-import About from './pages/About/About';
-import Projects from './pages/Projects/Projects';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation/Navigation';
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
+import Resume from './components/Resume/Resume';
 import Footer from './components/Footer/Footer';
 import './App.scss';
 
 function App() {
   return (
-    <div className='App'>
-      <Router>
-        <Navigation />
-        <div className='App__container'>
-          <Routes>
-            <Route path='/' element={<HomePage />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/projects' element={<Projects />} />
-          </Routes>
-        <Footer />
-        </div>
-      </Router>
-    </div>
-  );
+		<div className='App'>
+			<Navigation />
+			<div className='App__container'>
+				<About />
+				<Projects />
+				<Resume />
+				<Footer />
+			</div>
+		</div>
+	);
 }
 
 export default App;

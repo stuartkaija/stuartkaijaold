@@ -1,7 +1,7 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/variables' as *;
 
-.home {
+.projects {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,11 +13,22 @@
         padding: 0rem 6rem;
     }
 
-    &__words {
-        font-size: 1.5rem;
     
-        &--span {
-            font-style: italic;
-        }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 50%;
+        list-style: none;
+        padding-left: 0rem;
+        font-size: 1.5rem;
+    }
+    
+    &__link {
+        color: $color-text;
+    }
+
+    &__words {
+        font-size: 1.25rem;
     }
 }
