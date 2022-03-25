@@ -1,7 +1,7 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/variables' as *;
 
-.home {
+.about {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,5 +19,11 @@
         &--span {
             font-style: italic;
         }
+    }
+
+    &__link {
+        text-decoration: underline;
+        text-decoration-thickness: 0.1rem;
+        color: $color-text-alt;
     }
 }

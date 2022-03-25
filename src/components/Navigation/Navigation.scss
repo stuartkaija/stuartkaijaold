@@ -23,6 +23,7 @@
         color: $color-text;
         transform: rotate(-25deg);
         text-transform: uppercase;
+        text-decoration: none;
         transition: transform ease-in-out 0.2s, margin 1s;
 
         @include tablet {
@@ -42,26 +43,20 @@
                 transition: transform ease-in-out 0.2s;
 
             }
-
         }
     }
 
-    &__link--active {
-        margin: 0rem 1rem;
-        color: $color-text;
-        text-transform: uppercase;
+    // &__link--active {
+    //     margin: 0rem 1rem;
+    //     color: $color-text;
+    //     text-transform: uppercase;
 
-        @include tablet {
-            margin: 0rem 4rem;
-        }
+    //     @include tablet {
+    //         margin: 0rem 4rem;
+    //     }
 
-        @include desktop {
-            padding: 3rem 0rem;
-        }
-    }
+    //     @include desktop {
+    //         padding: 3rem 0rem;
+    //     }
+    // }
 }
-
-// .test {
-//     position: fixed;
-//     bottom: 0;
-// }

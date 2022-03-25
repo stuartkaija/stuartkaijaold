@@ -6,10 +6,10 @@ import GH from '../../assets/icons/GitHub-Mark-120px-plus.png';
 export default function Footer() {
   return (
     <footer className='footer'>
-        <a href="https://www.linkedin.com/in/stuartkaija/" target='_blank'>
+        <a href="https://www.linkedin.com/in/stuartkaija/" target='_blank' rel='noreferrer'>
             <img className='footer__icon--LI' src={LI} alt="LinkedIn" />
         </a>
-        <a href="https://github.com/stuartkaija" target='_blank'>
+        <a href="https://github.com/stuartkaija" target='_blank' rel='noreferrer'>
             <img className='footer__icon' src={GH} alt="GitHub" />
         </a>
     </footer>

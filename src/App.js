@@ -8,16 +8,16 @@ import './App.scss';
 
 function App() {
   return (
-    <div className='App'>
-        <Navigation />
-        <div className='App__container'>
-          <About />
-          <Projects />
-          <Resume />
-          <Footer />
-        </div>
-    </div>
-  );
+		<div className='App'>
+			<Navigation />
+			<div className='App__container'>
+				<About />
+				<Projects />
+				<Resume />
+				<Footer />
+			</div>
+		</div>
+	);
 }
 
 export default App;
