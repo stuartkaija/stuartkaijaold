@@ -3,7 +3,7 @@ import './Projects.scss';
 
 export default function Projects() {
   return (
-    <div className='projects'>
+    <div id='projects' className='projects'>
         <p className='projects__words'>This is the projects page!</p>
     </div>
   )
