@@ -2,6 +2,7 @@
 import Navigation from './components/Navigation/Navigation';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
+import Resume from './components/Resume/Resume';
 import Footer from './components/Footer/Footer';
 import './App.scss';
 
@@ -12,6 +13,7 @@ function App() {
         <div className='App__container'>
           <About />
           <Projects />
+          <Resume />
           <Footer />
         </div>
     </div>
