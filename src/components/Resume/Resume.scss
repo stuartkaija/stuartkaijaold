@@ -1,0 +1,25 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 0rem 1rem;
+    transition: padding 0.5s;
+
+    @include tablet {
+        padding: 0rem 6rem;
+    }
+
+    &__header {
+        font-weight: normal;
+        font-size: 1.5rem;
+    }
+
+    &__list-item {
+        font-size: 1.25rem;
+        padding: 0.5rem 0rem;
+    }
+}
