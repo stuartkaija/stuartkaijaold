@@ -1,4 +1,5 @@
 import React from 'react';
+import uniqid from 'uniqid';
 import './Resume.scss';
 
 export default function Resume() {
@@ -10,7 +11,8 @@ export default function Resume() {
             <h1 className='resume__header'>Experience with:</h1>
             <ul>
                 {skills.map((skill) => {
-                    return <li className='resume__list-item'>{skill}</li>
+                    // requires key for mapping
+                    return <li key={uniqid()} className='resume__list-item'>{skill}</li>
                 })}
             </ul>
         </div>
