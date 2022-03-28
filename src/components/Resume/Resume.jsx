@@ -10,9 +10,7 @@ export default function Resume() {
             <h1 className='resume__header'>Experience with:</h1>
             <ul>
                 {skills.map((skill) => {
-                    return (
-                        <li className='resume__list-item'>{skill}</li>
-                    )
+                    return <li className='resume__list-item'>{skill}</li>
                 })}
             </ul>
         </div>
