@@ -1,7 +1,8 @@
 import React from 'react';
 import './About.scss';
 
-export default function HomePage() {
+export default function About() {
+
 
     const dateMaker = () => {
         const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
@@ -11,6 +12,7 @@ export default function HomePage() {
 
         return days[today.getDay()];
     }
+
 
     return (
         <div id='about'  className='about'>
