@@ -11,7 +11,6 @@ export default function Resume() {
             <h1 className='resume__header'>Experience with:</h1>
             <ul>
                 {skills.map((skill) => {
-                    // requires key for mapping
                     return <li key={uniqid()} className='resume__list-item'>{skill}</li>
                 })}
             </ul>
