@@ -4,7 +4,7 @@ import './Navigation.scss';
 export default function Navigation() {
     return (
         <nav className='navigation'>
-            <a className='navigation__link' href="#about">About</a>
+            <a className='navigation__link navigation__link--active' href="#about">About</a>
             
             <a className='navigation__link' href="#projects">Projects</a>
             
