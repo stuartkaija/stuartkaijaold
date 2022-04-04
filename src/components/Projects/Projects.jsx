@@ -1,9 +1,22 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import './Projects.scss';
 
-export default function Projects() {
-  return (
-		<div id='projects' className='projects'>
+export default function Projects({whosInView}) {
+
+	const { ref, inView, entry} = useInView({
+		threshold: 0.4
+	});
+
+	console.log("projects is in view? ", inView);
+
+	if (inView) {
+        whosInView("projects");
+    }
+
+	return (
+		<div ref={ref} id='projects' className='projects'>
+			<h1>{`Now I am in view! ${inView}`}</h1>
 			<ul className='projects__list'>
 				<li className='projects__list-item'>
 					<a className='projects__link' href="https://github.com/stuartkaija/bubble-buddies" target='_blank' rel='noreferrer'>Bubble Buddies</a>
