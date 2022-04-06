@@ -14,32 +14,30 @@ function App() {
 
 	const { ref: aboutRef, inView: aboutInView, entry: aboutEntry } = useInView({
 		threshold: 0.4
-	})
-
+	});
 	const { ref: projectRef, inView: projectInView, entry: projectEntry } = useInView({
 		threshold: 0.4
-	})
-
+	});
 	const { ref: resumeRef, inView: resumeInView, entry: resumeEntry} = useInView({
 		threshold: 0.4
-	})
+	});
 
 	useEffect(() => {
 		if (aboutInView) {
 			setWhosInView('about');
-		}
+		};
 		if (projectInView) {
 			setWhosInView('projects');
-		}
+		};
 		if (resumeInView) {
 			setWhosInView('resume');
-		}
+		};
 
 		return () => {
 			setWhosInView('');
-		}
+		};
 
-	}, [aboutInView, projectInView, resumeInView])
+	}, [aboutInView, projectInView, resumeInView]);
 
   	return (
 		<div className='App'>
@@ -62,6 +60,6 @@ function App() {
 			</div>
 		</div>
 	);
-}
+};
 
 export default App;
