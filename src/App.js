@@ -45,15 +45,15 @@ function App() {
 			<div className='App__container'>
 
 				<div ref={aboutRef}>
-					<About inView={aboutInView} />
+					<About />
 				</div>
 
 				<div ref={projectRef}>
-					<Projects inView={projectInView} />
+					<Projects />
 				</div>
 
 				<div ref={resumeRef}>
-					<Resume inView={resumeInView} />
+					<Resume />
 				</div>
 
 				<Footer />
