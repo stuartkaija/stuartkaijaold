@@ -46,7 +46,9 @@
         }
 
         &--active {
-            background-color: teal;
+            background-color: antiquewhite;
+            border-radius: 0.5rem;
+            transform: rotate(0deg);
         }
     }
 }

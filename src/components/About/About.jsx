@@ -1,18 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import './About.scss';
 
-export default function About({ whosInView }) {
+export default function About({inView}) {
 
-    const { ref, inView, entry} = useInView({
-        threshold: 0.4
-    });
+    // const [onScreen, setOnScreen] = useState(null);
 
-    console.log('entry: ', entry)
-    console.log("about is in view? ", inView);
+    // const { ref: aboutRef, inView, entry} = useInView({
+    //     threshold: 0.4
+    // });
 
-    // const onScreen = () => {
-    //     whosInView("about");
+    // console.log('entry: ', entry);
+    // console.log('ref: ', aboutRef);
+    // console.log("about is in view? ", inView);
+
+    // if (!inView) {
+    //     setOnScreen(false);
     // }
 
     const dateMaker = () => {
@@ -25,11 +28,11 @@ export default function About({ whosInView }) {
     };
 
     return (
-        <div ref={ref} id='about'  className='about'>
-            <h1>{`I am in view?!?! ${inView}`}</h1>
-            <p className='about__words'>Hello, and happy <span>{dateMaker()}</span>.</p>
+        <div id='about'  className='about'>
+            <h1>{`About in View? ${inView}`}</h1>
+            {/* <p className='about__words'>Hello, and happy <span>{dateMaker()}</span>.</p>
             <p className='about__words'>I'm Stuart - recent web development bootcamp grad, former fire fighter. Interested in creating things (<a className='about__link' href='#projects'>websites</a>, music, <span className='home__words--span'>these could be hyperlinks ideally)</span>, seeing new places, blah blah blah blah blah.</p>
-            <p className='about__words'>You can reach me <a className='about__link' href="mailto:stuartkaija@gmail.com?subject=mail%20from%20personal%20site" target='_blank' rel='noreferrer'>here</a>.</p>
+            <p className='about__words'>You can reach me <a className='about__link' href="mailto:stuartkaija@gmail.com?subject=mail%20from%20personal%20site" target='_blank' rel='noreferrer'>here</a>.</p> */}
         </div>
     )
 }
