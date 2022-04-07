@@ -4,7 +4,7 @@ import './Resume.scss';
 
 export default function Resume() {
 
-    const skills = ['HTML', 'CSS/SCSS', 'JavaScript', 'React', 'Node', 'Express', 'Agile Development', 'Web APIs', 'Responsive Design', 'Web Accessibility'];
+    const skills = ['HTML', 'CSS/SCSS', 'JavaScript', 'React', 'Node', 'Express', 'Agile Development', 'Dom APIs', 'Web APIs', 'User Authentication', 'Responsive Design', 'Web Accessibility'];
 
     return (
         <div id='resume' className='resume'>

@@ -14,9 +14,9 @@ export default function About() {
 
     return (
         <div id='about'  className='about'>
-            <p className='about__words'>Hello, and happy <span>{dateMaker()}</span>.</p>
-            <p className='about__words'>I'm Stuart - recent web development bootcamp grad, former fire fighter. Interested in creating things (<a className='about__link' href='#projects'>websites</a>, music, <span className='home__words--span'>these could be hyperlinks ideally)</span>, seeing new places, blah blah blah blah blah.</p>
-            <p className='about__words'>You can reach me <a className='about__link' href="mailto:stuartkaija@gmail.com?subject=mail%20from%20personal%20site" target='_blank' rel='noreferrer'>here</a>.</p>
+            <h1>Hello, and happy <span>{dateMaker()}</span>.</h1>
+            <p className='about__words'>I'm Stuart - a web developer with a passion for creating applications that work for and improve the human experience.</p>
+            <p className='about__words'>You can reach me at <a className='about__link' href="mailto:stuartkaija@gmail.com?subject=mail%20from%20personal%20site" target='_blank' rel='noreferrer'>stuartkaija@gmail.com</a>.</p>
         </div>
     );
 };

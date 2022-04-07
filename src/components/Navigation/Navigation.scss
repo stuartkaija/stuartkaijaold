@@ -20,15 +20,16 @@
 
     &__link {
         margin: 0rem 1rem;
+        font-size: 1rem;
         color: $color-text;
         transform: rotate(-25deg);
         text-transform: uppercase;
         text-decoration: none;
-        transition: transform ease-in-out 0.2s, margin 1s;
+        transition: transform ease-in-out 0.2s, margin 1s, font-size ease-in-out 0.2s;
 
         @include tablet {
             margin: 0rem 4rem;
-            transition: transform ease-in-out 0.2s, margin 0.5s;
+            transition: transform ease-in-out 0.2s, margin 0.5s, font-size ease-in-out 0.2s;
         }
 
         @include desktop {
@@ -46,8 +47,10 @@
         }
 
         &--active {
+            font-size: 1.5rem;
             border-radius: 0.5rem;
             transform: rotate(0deg);
+            transition: font-size ease-in-out 0.2s;
         }
     }
 }
