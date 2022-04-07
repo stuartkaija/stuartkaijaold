@@ -9,7 +9,7 @@ export default function Resume() {
     return (
         <div id='resume' className='resume'>
             <h1 className='resume__header'>Experience with:</h1>
-            <ul>
+            <ul className='resume__list'>
                 {skills.map((skill) => {
                     return <li key={uniqid()} className='resume__list-item'>{skill}</li>
                 })}

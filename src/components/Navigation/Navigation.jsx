@@ -17,7 +17,7 @@ export default function Navigation({whosInView}) {
         <nav className='navigation'>
             <a className={activeNav === 'about' ? 'navigation__link navigation__link--active' : 'navigation__link'} href="#about">About</a>
             <a className={activeNav === 'projects' ? 'navigation__link navigation__link--active' : 'navigation__link'} href="#projects">Projects</a>
-            <a className={activeNav === 'resume' ? 'navigation__link navigation__link--active' : 'navigation__link'} href="#resume">Resume</a>
+            <a className={activeNav === 'resume' ? 'navigation__link navigation__link--active' : 'navigation__link'} href="#resume">Skills</a>
         </nav>
     );
 };

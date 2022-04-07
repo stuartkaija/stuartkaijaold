@@ -11,7 +11,7 @@ export default function Projects() {
 					<p className='projects__words'>React, Sass, Node, Express - a full stack friend-finding CRUD app.</p>
 				</li>
 				<li className='projects__list-item'>
-					<p className='projects__link' href="">WhoopWork</p>
+					<p className='projects__link'>WhoopWork</p>
 					<p className='projects__words'>Industry hack-a-thon - with a team of two designers and two developers, ideated and brought to life a new feature for wearable fitness brand Whoop.</p>
 				</li>
 				<li className='projects__list-item'>
