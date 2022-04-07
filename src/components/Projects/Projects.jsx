@@ -2,7 +2,8 @@ import React from 'react';
 import './Projects.scss';
 
 export default function Projects() {
-  return (
+
+	return (
 		<div id='projects' className='projects'>
 			<ul className='projects__list'>
 				<li className='projects__list-item'>
@@ -19,5 +20,5 @@ export default function Projects() {
 				</li>
 			</ul>
 		</div>
-	)
-}
+	);
+};
