@@ -23,7 +23,7 @@
         font-size: 1rem;
         font-weight: bold;
         color: $color-text;
-        transform: rotate(-25deg);
+        // transform: rotate(-15deg);
         text-transform: uppercase;
         text-decoration: none;
         transition: transform ease-in-out 0.2s, margin 1s, font-size ease-in-out 0.2s;
@@ -52,6 +52,10 @@
             border-radius: 0.5rem;
             transform: rotate(0deg);
             transition: font-size ease-in-out 0.2s;
+
+            @include tablet {
+                font-size: 1.75rem;
+            }
         }
     }
 }
