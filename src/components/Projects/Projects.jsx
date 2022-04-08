@@ -16,7 +16,7 @@ export default function Projects() {
 				</li>
 				<li className='projects__list-item'>
 					<a className='projects__link' href="https://github.com/stuartkaija/instock" target='_blank' rel='noreferrer'>InStock</a>
-					<p className='projects__words'>A warehouse inventory application created with a team of 3 other developers. Successfully utilized agile methodologies, Jira, and GitHub version control for collaboration.</p>
+					<p className='projects__words'>A warehouse inventory application created with a team of three other developers. Successfully utilized agile methodologies, Jira, and GitHub version control for collaboration.</p>
 				</li>
 			</ul>
 		</div>
