@@ -1,0 +1,45 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 0rem 1rem;
+    transition: padding 0.5s;
+
+    @include tablet {
+        padding: 0rem 6rem;
+    }
+
+    
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+        padding-left: 0rem;
+        font-size: 1.5rem;
+    }
+    
+    // &__list-item {
+    //     margin-top: 1rem;
+    // }
+
+    &__link {
+        color: $color-text;
+        text-decoration: underline;
+        padding-top: 1rem;
+    }
+
+    &__words {
+        font-size: 1rem;
+        transition: font-size ease-in-out 0.2s;
+
+        @include tablet {
+            font-size: 1.25rem;
+            transition: font-size ease-in-out 0.2s;
+        }
+    }
+}

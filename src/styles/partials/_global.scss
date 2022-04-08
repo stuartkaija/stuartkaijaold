@@ -1,0 +1,13 @@
+@use './variables' as *;
+@use './typography' as *;
+
+*,**::before,**::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: $color-text;
+    margin: 0rem;
+    font-family: 'Poppins';
+    letter-spacing: -1px;
+}

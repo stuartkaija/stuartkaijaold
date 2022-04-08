@@ -1,0 +1,39 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 0rem 1rem;
+    transition: padding 0.5s;
+
+    @include tablet {
+        padding: 0rem 6rem;
+    }
+
+    &__header {
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin: 0rem;
+
+    }
+
+    &__list {
+        @include tablet {
+            columns: 2;
+        }
+    }
+
+    &__list-item {
+        font-size: 1rem;
+        transition: font-size ease-in-out 0.2s;
+        padding: 0.5rem 0rem;
+
+        @include tablet {
+            font-size: 1.25rem;
+            transition: font-size ease-in-out 0.2s;
+        }
+    }
+}
