@@ -23,7 +23,6 @@
         font-size: 1rem;
         font-weight: bold;
         color: $color-text;
-        // transform: rotate(-15deg);
         text-transform: uppercase;
         text-decoration: none;
         transition: margin 1s, font-size ease-in-out 0.2s;
@@ -36,15 +35,6 @@
         @include desktop {
             padding: 3rem 0rem;
         }
-    
-        // &:hover {
-        //     transform: rotate(0deg);
-        //     transition: transform ease-in-out 0.2s;
-
-        //     @include tablet {
-        //         transition: transform ease-in-out 0.2s;
-        //     }
-        // }
 
         &--active {
             font-size: 1.5rem;

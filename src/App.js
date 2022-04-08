@@ -43,19 +43,15 @@ function App() {
 		<div className='App'>
 			<Navigation whosInView={whosInView}/>
 			<div className='App__container'>
-
 				<div ref={aboutRef}>
 					<About />
 				</div>
-
 				<div ref={projectRef}>
 					<Projects />
 				</div>
-
 				<div ref={resumeRef}>
 					<Resume />
 				</div>
-
 				<Footer />
 			</div>
 		</div>
