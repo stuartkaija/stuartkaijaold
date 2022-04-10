@@ -14,9 +14,15 @@
     }
 
     &__words {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: 600;
         letter-spacing: -1px;
+        transition: font-size 0.5s;
+
+        @include tablet {
+            font-size: 1.5rem;
+            transition: font-size 0.5s;
+        }
 
     
         &--span {
